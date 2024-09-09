@@ -1,0 +1,183 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hand-hand-icon{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.hand-hand-icon img{
+    height: 8%;
+    width: 8%;
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero-left p{
+    color: #171717;
+    font-size: 40px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width: 105px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 220px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: orange;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero-latest-btn p{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Replace with your preferred font */
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin: 20px; */
+}
+
+/* Left Side Styles */
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-left h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-left .hand-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.hero-left .hand-hand-icon p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.hero-left .hand-hand-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-left p {
+    font-size: 1.5rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.hero-left .hero-latest-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-left .hero-latest-btn p {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.hero-left .hero-latest-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.hero-left .hero-latest-btn:hover {
+    background-color: #d35400;
+}
+
+/* Right Side Styles */
+.hero-right {
+    max-width: 45%;
+}
+
+.hero-right img {
+    width: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        max-width: 100%;
+    }
+
+    .hero-left {
+        margin-bottom: 20px;
+    }
+}
