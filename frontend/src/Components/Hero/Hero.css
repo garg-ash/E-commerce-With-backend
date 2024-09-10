@@ -87,7 +87,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* margin: 20px; */
