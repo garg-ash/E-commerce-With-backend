@@ -1,9 +1,18 @@
 import React from 'react'
 import './RelatedProduct.css'
+import data_product from '../Assets/data'
 
 const RelatedProduct = () => {
   return (
-    <div className='relatedproducts'>RelatedProduct</div>
+    <div className='relatedproducts'>RelatedProduct
+      <h1>Related Products</h1>
+      <hr />
+      <div className="relatedproducts-item">
+        {data_product.map((item, index)=>{
+          return <item key={index} id = {item.id} name = {item.name} category = {item.category} image = {item.image} new_price = {item.new_price} old_price = {item.old_price}/>
+        })}
+      </div>
+    </div>
   )
 }
 
